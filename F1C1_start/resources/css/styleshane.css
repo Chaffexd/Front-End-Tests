@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+/* header styles */
+
+header {
+    height: 5.3125rem;
+    color: #4a4a4a;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6;
+    height: 5.32rem;
+}
+
+header .logo {
+    font-size: 24px;
+    font-family: 'Roboto-Mono-Regular', sans-serif;
+    margin: 0 30px;
+}
+
+.content li {
+    list-style-type: none;
+    display: inline;
+    padding: 3.5rem;
+}
+
+header .icon {
+    width: 1rem;
+    padding-left: .75rem;
+  }
+
+.mobile {
+    display: none;
+}
+
+/* content section */
+
+.main-content {
+    position: relative;
+    top: 5.3125rem;
+}
+
+#sign-up-section {
+    background-image: url(/resources/images/banner-landingpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 43.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sign-up-cta {
+    background-color: #9dc20a;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    position: relative;
+    left: 10%;
+    padding: 0 5rem 2.5rem 5rem;
+}
+
+#sign-up-cta .content { 
+    width: 25.625rem;
+    color: white;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+} 
+
+.center {
+    text-align: center;
+}
+
+#sign-up-cta h2 {
+    font-size: 2.25rem;
+}
+
+#sign-up-cta .cursive {
+    font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+    font-family: "Rubik", sans-serif;
+    padding-bottom: 0.75rem;
+}
+
+#sign-up-cta .button {
+    background-color: #4a4a4a;
+    padding: 1.25rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.625rem;
+}
+
+#sign-up-cta span {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    color: #4a4a4a;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-family: 'Roboto-Bold', sans-serif;
+    line-height: 1.2;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-family: 'Roboto-Light', sans-serif;
+    line-height: 1.2;
+}
+
+.feature {
+    background-color: white;
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    text-align: center;
+}
+
+.feature .content {
+    padding: 2.5rem 0;
+}
+
+#filters-section {
+    background-color: #4a4a4a;
+    padding: 4rem 0;
+}
+
+#filters-section .content {
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.content h2 {
+    opacity: 100%;
+    font-size: 2.25rem;
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+.content h3 {
+    font-size: 1rem;
+    font-family: 'Roboto-Light', sans-serif;
+    line-height: 1.4;
+}
+
+.images-container {
+    display: flex;
+    padding: 0 1%;
+}
+
+.image-container { 
+    overflow: hidden;
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+.image-container img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+/* quote section */
+
+#quotes-section .content {
+    padding: 5rem 0;
+    color: #4a4a4a;
+    font-size: 1.875rem;
+    font-family: 'Palatino-Italic', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#quotes-section span {
+    margin-right: 1.875rem;
+}
+
+/* footer */
+
+footer { 
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 0.67rem;
+    color: white;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+      top: 2.5625rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+  
+    header .mobile .button {
+      padding: .1875rem .5rem;
+      background-color: #9dc20b;
+      line-height: 1.6;
+      color: white;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #sign-up-section {
+      align-items: center;
+      justify-content: center;
+      height: 28rem;
+    }
+  
+    #sign-up-cta {
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border: none;
+    }
+  
+    #sign-up-cta .content {
+      margin-top: 0;
+    }
+  
+    #sign-up-cta .email {
+      display: none;
+    }
+  
+    #sign-up-cta h1 {
+      font-size: 3.125rem;
+    }
+  
+    #sign-up-cta h2 {
+      font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #sign-up-section {
+      height: 20rem;
+    }
+  
+    #sign-up-cta h1 {
+      font-size: 2.25rem;
+    }
+  
+    #sign-up-cta h2 {
+      font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .feature h2 {
+      font-size: 1.125rem;
+      line-height: 1.3;
+      font-weight: normal;
+    }
+  
+    .feature h3 {
+      font-size: .875rem;
+      line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #features-section {
+      flex-flow: column;
+      padding: 0;
+    }
+  
+    .feature {
+      margin: 0;
+      padding: 1.25rem 1rem 0 1rem;
+    }
+  
+    .feature .content {
+      padding: 1.25rem 0 1.875rem 0;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #filters-section {
+      padding: 1.5rem 0 0 0;
+    }
+  
+    #filters-section .content {
+      margin-bottom: 1rem;
+    }
+  
+    #filters-section .content h2 {
+      padding-bottom: .625rem;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      font-weight: normal;
+    }
+  
+    #filters-section .content h3 {
+      font-size: .875rem;
+      line-height: 1.4;
+    }
+  
+    #filters-section .images-container {
+      padding: 0;
+    }
+  
+    #filters-section .extra {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #quotes-section .content {
+      padding: 1.875rem .625rem;
+    }
+  
+    #quotes-section .quote {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+  
+    #quotes-section .quote-citation {
+      display: block;
+      padding-top: 1rem;
+      margin: auto;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    footer .content {
+      font-size: .625rem;
+    }
+}
