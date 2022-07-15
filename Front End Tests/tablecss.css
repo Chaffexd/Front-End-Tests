@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+  }
+  
+h1 {
+    text-align: center;
+}
+  
+h2 {
+    color: lightseagreen;
+    text-align: center;
+}
+  
+table {
+    border: 2px solid lightskyblue;
+    width: 650px;
+    margin: 0 auto;
+}
+  
+thead {
+    background-color: lightyellow;
+}
+  
+td {
+    border-top: 1px solid lightsalmon;
+}
+  
+.code {
+    font-family: monospace;
+    background-color: beige;
+}

@@ -1,0 +1,256 @@
+/* Generic all styles */
+body{
+    display: block;
+}
+
+a{
+    color: blue;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+.maintitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Styles all the main divs to be the same */
+.container{ 
+    padding: 10px;
+    margin: 10px auto;
+    width: 70%;
+    border: 2px solid slategray;
+}
+
+/* This is for the positioning box */
+.position p{
+    margin: 7px 0;
+    background-color: #aab4bd;
+    padding: 10px;
+}
+
+.position p span{
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.sizing p{
+    margin: 7px 0;
+    background-color: #aab4bd;
+    padding: 10px;
+}
+
+.sizing p span{
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.position p span{
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+/* This is for the dom section */
+
+.dom p{
+    margin: 7px 0;
+    background-color: #aab4bd;
+    padding: 10px;
+}
+
+.dom p span{
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.example h1 {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+.example {
+    width: 50%;
+    margin: 0 auto;
+}
+  
+.ex-container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+}
+  
+.box {
+    height: 75px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
+  
+#flexstart {
+    justify-content: flex-start;
+}
+  
+#flexend {
+    justify-content: flex-end;
+}
+  
+#center {
+    justify-content: center;
+}
+  
+#spacearound {
+    justify-content: space-around;
+}
+  
+#spacebetween {
+    justify-content: space-between;
+}
+
+/* This is for the Bash commands */
+.command p{
+    margin: 7px 0;
+    background-color: #aab4bd;
+    padding: 10px;
+}
+
+.command p span{
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+/* This is for the colours */
+.color-container{
+    width: 100%;
+    text-align: center;
+    border: 2px solid slategray;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6{
+    display: inline-block;
+    width: 32%;
+    color: white;
+    margin: 20px auto;
+}
+
+.color1{
+    background: tomato;
+}
+
+.color1:hover{
+    background: rgb(114, 32, 18);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.color2{
+    background: blue;
+}
+
+.color2:hover{
+    background: rgb(108, 162, 223);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.color3{
+    background: pink;
+}
+
+.color3:hover{
+    background: rgb(224, 14, 49);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.color4{
+    background: purple;
+
+}
+
+.color4:hover{
+    background: rgb(211, 50, 211);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.color5{
+    background: green;
+}
+
+.color5:hover{
+    background: rgb(97, 209, 97);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.color6{
+    background: teal;
+}
+
+.color6:hover{
+    background: rgb(100, 231, 231);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+/* This is for the fonts */
+.font-container{
+    border: 2px solid slategray;
+}
+
+.fonts{
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.font1, .font2, .font3, .font4{
+    display: inline-block;
+    width: 48%;
+    margin: 20px auto;
+}
+
+.font1{
+    font-family: "Edu QLD Beginner", sans-serif;    
+}
+
+.font2{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.font3{
+    font-family: 'Oswald', sans-serif; 
+}
+
+.font4{
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+/* This is for the texts */
+.text-styles{
+    border: 2px solid slategray;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.header h1{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Edu QLD Beginner", sans-serif;  
+}
+
+.subhead h2{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+.paragraph p{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif; 
+}

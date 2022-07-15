@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/webstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Montserrat:wght@300;400&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+    <title>Shane's Website Style Guide</title>
+</head>
+<body>
+
+    <h1 class="maintitle">Shane's Cheat Sheet</h1>
+
+    <div class="container">
+        <h2>HTML Semantic Markup</h2>
+        <div class="html">
+            <div>
+                <article id="semantic">
+                    <h2>Semantic Markup</h2>
+                        <div class="semnatichtml">
+<pre>
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;Title&lt;title&gt;
+&lt;/head&gt;
+                            
+&lt;body&gt;
+
+&lt;header&gt;
+    Logo, Title, Navigation
+&lt;nav&gt;
+    Navigation toolbar
+&lt;/nav&gt;
+
+&lt;/header&gt;
+
+&lt;article&gt;
+    Self-contained content
+&lt;/article&gt;
+                            
+&lt;section&gt;
+Related grouping of semantic meaning
+                            
+    &lt;article&gt;
+    Would still make sense if all other content removed
+                            
+    &lt;aside&gt;
+    &lt;blockquote&gt;
+        Related to main content but outside the main flow of content
+    &lt;/blockquote&gt;
+    &lt;/aside&gt;
+                            
+    &lt;/article&gt;
+&lt;/section&gt;
+                            
+&lt;footer&gt;
+    Copyright, Contact, Links, Social Media
+&lt;/footer&gt;
+                            
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>CSS Cheat Sheet</h2>
+        <div class="css">
+            <h3>Positioning</h3>
+            <div class="position">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">position:</a> fixed | absolute | sticky | relative | static</p>
+            </div>
+
+            <div class="position">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin:</a> 0 auto; <span>Centers div in a div</span></p>
+            </div>
+
+            <div class="position">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">overflow:</a> visible | hidden | scroll | auto | clip | hidden visible <span>how to render content outside content-box</span></p>
+            </div>
+
+            <h3>Sizing</h3>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing:</a> content-box | border-box <span>Content box is the default</span></p>
+            </div>
+
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">width:</a> px | em | % <span>Sets height for non-inline elements</span></p>
+            </div>
+
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">height:</a> px | em | % <span>Sets width for non-inline elements</span></p>
+            </div>
+
+            <h3>CSS Flexbox</h3>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">display:</a> flex | inline-flex <span>Used to designate a div as a flex container, places elements inline with eachother</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">justify-content:</a> flex-start | flex-end | center | space-around | space-between <span>To position items from left to right</span></p>
+            </div>
+            <div class="example">
+                <h1>Flex Start</h1>
+                    <div class='ex-container' id='flexstart'>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                    </div>
+                    <h1>Flex End</h1>
+                    <div class='ex-container' id='flexend'>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                    </div>
+                    <h1>Center</h1>
+                    <div class='ex-container' id='center'>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                    </div>
+                    <h1>Space Around</h1>
+                    <div class='ex-container' id='spacearound'>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                    </div>
+                    <h1>Space Between</h1>
+                    <div class='ex-container' id='spacebetween'>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                    </div>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">align-items:</a> flex-start | flex-end | center | baseline | stretch <span>Makes it possible to space flex items vertically</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">flex-grow:</a> 1 | 2 | 3 <span> Allows us to specify if items should grow to fill a container</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink" target="_blank">flex-shrink:</a> 1 | 2 | 3 <span>Used to specify which elements will shrink and in what proportion</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">flex-basis:</a> 100px; <span>Allows us to specify the width of an item before it stretches or shrinks</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">flex:</a> 2 1 150px; <span>Gives us a shorthand property to specify how much items stretch and shrink (can declare flex-grow, shrink, basis all in 1 link) </span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank">flex-wrap:</a> wrap | nowrap | wrap-reverse <span>Allows items to move to the next line when necessary</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank">align-content:</a> flex-start | flex-end | center | space-between | space-around | stretch <span>Used for a flex container that has multiple rows</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" target="_blank">flex-direction:</a> row | row-reverse | column | column-reverse <span>Let's us change the axis, they are interchangeable between horizontal and vertical</span></p>
+            </div>
+            <div class="sizing">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" target="_blank">flex-flow:</a> column wrap; <span>Let's us define both flex-wrap and flex-direction in 1 line</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>CSS Grid</h2>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">display:</a> grid; <span>Turns the container into a grid</span></p>
+        </div>
+        <div class="sizing"> 
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" target="_blank">grid-template-columns:</a> 100px 50% 200px; <span>Specifies the widths of each column, each number counts as a column</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows" target="_blank">grid-template-rows:</a> 10% 20% 600px; <span>Specifies the widths of each row</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template" target="_blank">grid-template:</a> 200px 300px / 20% 10% 70%; <span>Shorthand of both of the above, values after the slash determine the size of each column</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template" target="_blank">grid-template:</a> 2fr 1fr 1fr / 1fr 3fr 1fr; <span>Fractions make it easier to not overflow the grid, rows = height, column = width</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template" target="_blank">grid-template:</a> repeat(3, 1fr) / 3fr 50% 1fr; <span>The repeat() function will repeat 3 times for 1fr per row or column</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template" target="_blank">grid-template:</a> 100px minmax(100px, 500px) 100px; <span>The minmax allows columns or rows getting too small or big</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap" target="_blank">row/column-gap:</a> 10px; <span>Will put some gap between each row and column (gap: 20px 5px shorthand)</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start" target="_blank">grid-row-start:</a> 1; <span>Edits the item to start on a specific row</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end" target="_blank">grid-row-end:</a> 7; <span>Edits the items inside the grid container to span over multiple rows, should be one greater than the last row you want to cover</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row" target="_blank">grid-row:</a> 4 / 6; <span>Shorthand for start and end</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column" target="_blank">grid-column:</a> 4 / span 2; <span>Has the same abilities as above</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area" target="_blank">grid-area:</a> 2 / 3 / 4 / span 5; <span>Takes 4 values in this order grid-row-start / column-start / row-end / column-end;</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas" target="_blank">grid-template-areas:</a> "header header" "nav nav" "left right" "footer footer"; <span>Written on a different line, </span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area" target="_blank">grid-area:</a> header | nav | left | right | footer <span>Use this property to assign what each area is with template areas</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items" target="_blank">justify-items:</a> start | end | center | stretch <span>Positions grid items along the inline (row) axis</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">justify-content:</a> start | end | center | stretch | space-around | space-between | space-evenly <span>Positions grid items along the inline-block (row) axis</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">align-items:</a> start | end | center | stretch <span>Positions grid items along the block (column) axis, top to bottom</span></p>
+        </div>
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank">align-content:</a> start | end | center | stretch | space-around | space-between | space-evenly <span>Positions the rows along the block (column) axis, top to bottom, declared on grid containers</span></p>
+        </div>  
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self" target="_blank">justify-self:</a> start | end | center | stretch <span>Positions an individual item in the grid along the row axis</span></p>
+        </div>  
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self" target="_blank">align-self:</a> start | end | center | stretch <span>Positions an individual item in the grid along the column axis</span></p>
+        </div> 
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">implicit grid vs explicit grid</a> start | end | center | stretch <span>Positions an individual item in the grid along the column axis</span></p>
+        </div>  
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows" target="_blank">grid-auto-rows:</a> px | % | fr | repeat(); <span>Specifies the height of implicitly added grid rows</span></p>
+        </div>  
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" target="_blank">grid-auto-columns:</a> px | % | fr | repeat(); <span>Specifies the width of implicitly added grid columns, defined on grid containers</span></p>
+        </div> 
+        <div class="sizing">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow" target="_blank">grid-auto-flow:</a> row | column | dense or row/column dense; <span>Specifies whether new items should be added to rows or columns, declared on containers.</span></p>
+        </div> 
+    </div>
+
+    <div class="container">
+        <h2>DOM Cheat Sheet</h2>
+        <div class="dom">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">document.getElementById(id)</a> <span>Returns element object by id</span></p>
+        </div>
+        <div class="dom">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName" target="_blank">document.getElementsByClassName(className)</a> <span>Returns live HTMLCollection of elements by class</span></p>
+        </div>
+        <div class="dom">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName">document.getElementsByTagName(tagName)</a> <span>Returns live HTMLCollection of elements by tag</span></p>
+        </div>
+        <div class="dom">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">document.querySelector(cssSelector)</a> <span>Returns the first element matching selector(s)</span></p>
+        </div>
+        <div class="dom">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">document.querySelectorAll(cssSelector)</a> <span>Returns static NodeList representing elements matching selector(s)</span></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>JavaScript Cheat Sheet</h2>
+
+    </div>
+
+    <div class="container">
+        <h2>Git Cheat Sheet</h2>
+
+    </div>
+
+    <div class="container">
+        <h2>Bash Commands</h2>
+        <div class="command">
+            <p>$pwd <span>Print Working Directory - Determine your location in file system</span></p>
+        </div>
+        <div class="command">
+            <p>$ls <span>Lists - Lists the files in your current directory</span></p>
+        </div>
+        <div class="command">
+            <p>$cd <span>Change Directory - Allows you to change directories</span></p>
+        </div>
+        <div class="command">
+            <p>$mkdir <span>Make Directory - Creates a new diretory (file)</span></p>
+        </div>
+        <div class="command">
+            <p>$touch <span>Creates a new file/document</span></p>
+        </div>
+        <div class="command">
+            <p>../ | ../../ | ../../../ <span>Navigtes you back up the directory tree</span></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Colours</h2>
+        <div class="color-container">
+            <div class="color1">
+                <p>This is Tomato</p>
+                <p>Placeholder</p>
+            </div>
+            <div class="color2">
+                <p>This is Blue</p>
+                <p>Placeholder</p>
+            </div>
+            <div class="color3">
+                <p>This is Pink</p>
+                <p>Placeholder</p>
+            </div>
+            <div class="color4">
+                <p>This is Purple</p>
+                <p>Placeholder</p>
+            </div>
+            <div class="color5">
+                <p>This is Green</p>
+                <p>Placeholder</p>
+            </div>
+            <div class="color6">
+                <p>This is Teal</p>
+                <p>Placeholder</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Fonts</h2>
+        <div class="font-container">
+            <div class="fonts">
+                <div class="font1">
+                    <p>This is Edu QLD Beginner</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, delectus!</p>
+                </div>
+                <div class="font2">
+                    <p>This is Montserrat</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, delectus!</p>
+                </div>
+                <div class="font3">
+                    <p>This is Oswald</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, delectus!</p>
+                </div>
+                <div class="font4">
+                    <p>This is Playfair Display</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, delectus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <h2>Text Styles</h2>
+        <div class="text-styles">
+            <div class="header">
+                <h1>H1 - Main Page Heading</h1>
+                <ul>
+                    <li>Font-weight: 700 (bold)</li>
+                    <li>Font-size: 26px</li>
+                    <li>Font-family: Edu QLD Beginner</li>
+                </ul>
+            </div>
+            <div class="subhead">
+                <h2>H2 - Sub Page Heading</h2>
+                <ul>
+                    <li>Font-weight: 500</li>
+                    <li>Font-size: 18px</li>
+                    <li>Font-family: Playfair Display</li>
+                </ul>
+            </div>
+            <div class="paragraph">
+                <p>P - Paragraph Text</p>
+                <ul>
+                    <li>Font-weight: 400 (regular)</li>
+                    <li>Font-size: 14px</li>
+                    <li>Font-family: Oswald </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

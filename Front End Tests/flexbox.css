@@ -1,0 +1,38 @@
+.width {
+    width: 50%;
+}
+
+.ex-container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+}
+  
+.box {
+    height: 75px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
+  
+#flexstart {
+    justify-content: flex-start;
+}
+  
+#flexend {
+    justify-content: flex-end;
+}
+  
+#center {
+    justify-content: center;
+}
+  
+#spacearound {
+    justify-content: space-around;
+}
+  
+#spacebetween {
+    justify-content: space-between;
+}

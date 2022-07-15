@@ -1,0 +1,53 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+header{
+    background-image: url(/images/image1.jpeg);
+    font-size: 50px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+}
+
+#brushes h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumspringgreen;
+    margin: 25px 0;
+    padding: 2px;
+}
+
+#frames h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: lightcoral;
+    margin: 25px 0;
+    padding: 2px;
+}
+
+#paint h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: skyblue;
+    margin: 25px 0;
+    padding: 2px;
+}
+
+.brushprice{
+    font-weight: bold;
+    color: blue;
+}
+
+.frameprice{
+    font-weight: bold;
+    color: blue;
+}
+
+.paintprice{
+    font-weight: bold;
+    color: blue;
+}

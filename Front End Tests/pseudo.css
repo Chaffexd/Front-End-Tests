@@ -1,0 +1,52 @@
+a:hover{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .nav-link{
+    text-decoration: none;
+  }
+  
+  .nav-link:hover{
+    color: red;
+  }
+  
+  .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #2176FF;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    color: red;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 1s ease-out;
+  }
+  
+  .activity{
+    text-decoration: none;
+    text-transform: none;
+    border: 1px solid #2176FF;
+    cursor: pointer;
+  }
+  
+  .activity:hover{
+    color: red;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+  
+  .activity:active{
+    font-size: 40px;
+    transition: font-size .1s;
+  }
